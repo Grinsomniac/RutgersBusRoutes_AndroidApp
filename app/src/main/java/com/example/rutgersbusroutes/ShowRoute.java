@@ -1,11 +1,14 @@
 package com.example.rutgersbusroutes;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
+
+import java.util.Objects;
 
 public class ShowRoute extends AppCompatActivity {
 
@@ -13,6 +16,11 @@ public class ShowRoute extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.route_detail);
+
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
+
+        Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         // get route name and detail from bundle
         Bundle bundle = getIntent().getExtras();
