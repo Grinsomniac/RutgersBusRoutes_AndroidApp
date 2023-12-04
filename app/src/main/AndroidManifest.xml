@@ -13,6 +13,9 @@
         android:theme="@style/Theme.RutgersBusRoutes"
         tools:targetApi="31">
         <activity
+            android:name=".ShowRoute"
+            android:exported="false" />
+        <activity
             android:name=".RURoutesApp"
             android:exported="true">
             <intent-filter>
