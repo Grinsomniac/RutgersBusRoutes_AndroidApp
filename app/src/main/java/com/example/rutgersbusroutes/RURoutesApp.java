@@ -18,8 +18,8 @@ public class RURoutesApp extends AppCompatActivity {
     private ListView listView;
     private String[] routeNames;
     private String[] routeDetails;
-    public static final String ROUTE_NAME = "route_name"; public
-    static final String ROUTE_DETAIL = "route_detail";
+    public static final String ROUTE_NAME = "route_name";
+    public static final String ROUTE_DETAIL = "route_detail";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
